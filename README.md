@@ -1,40 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# KCC - Construction Company Website
 
-## Getting Started
+KCC is a modern and responsive construction company website built using **Next.js**, **Tailwind CSS**, and **Nodemailer**. This website provides information about the company, its services, and a contact form for inquiries.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Fully responsive design using Tailwind CSS
+- Fast and SEO-friendly with Next.js
+- Contact form with email functionality using Nodemailer
+- Dynamic routing and optimized images
+- Clean and structured codebase
+
+## 🛠 Technologies Used
+
+- **Next.js** - React framework for SSR and performance optimization
+- **Tailwind CSS** - Utility-first CSS framework for styling
+- **Nodemailer** - For handling email functionality in the contact form
+
+## 📂 Project Structure
+
+```
+KCC/
+│── public/          # Static assets (images, logos, etc.)
+│── pages/           # Next.js pages (Home, About, Contact, etc.)
+│── components/      # Reusable UI components
+│── styles/         # Global styles and Tailwind configurations
+│── utils/          # Helper functions (email handling, etc.)
+│── .env            # Environment variables for email service
+│── package.json    # Project dependencies and scripts
+│── README.md       # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚡ Getting Started
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/abhishekboadgurjar/kcc.git
+cd kcc
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### 2️⃣ Install Dependencies
+```bash
+yarn install  # or npm install
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+### 3️⃣ Set Up Environment Variables
+Create a `.env.local` file and add your email service credentials:
+```env
+EMAIL_SERVICE=your_email_service
+EMAIL_USER=your_email@example.com
+EMAIL_PASS=your_email_password
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4️⃣ Run the Development Server
+```bash
+yarn dev  # or npm run dev
+```
+Visit [http://localhost:3000](http://localhost:3000) to see the project in action.
 
-## Learn More
+## 📬 Contact Form Integration
+The contact form in this project uses **Nodemailer** to send emails. Ensure you configure your SMTP settings correctly in `.env.local`.
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Deployment
+To deploy the project on **Vercel**, follow these steps:
+1. Push your code to GitHub.
+2. Connect the repository to [Vercel](https://vercel.com/).
+3. Set up environment variables in Vercel's dashboard.
+4. Deploy and get your live URL.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## 📜 License
+This project is licensed under the MIT License.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## ✨ Author
+Developed by **[Abhishek Gurjar](https://github.com/abhishekboadgurjar)**.
